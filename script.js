@@ -1,11 +1,13 @@
+const soundCloudPlayer = (url) =>
+  `https://w.soundcloud.com/player/?url=${encodeURIComponent(url)}&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false`;
+
 const albums = [
   {
     slug: "joji-sanctuary",
     title: "Sanctuary",
     artist: "Joji",
     cover: "assets/covers/joji-sanctuary.webp",
-    player:
-      "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/jojiofficial/sanctuary&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false",
+    player: soundCloudPlayer("https://soundcloud.com/jojiofficial/sanctuary"),
     x: 17,
     y: 34,
     r: -13,
@@ -16,7 +18,7 @@ const albums = [
     title: "Die For You",
     artist: "Joji",
     cover: "assets/covers/joji-die-for-you.webp",
-    player: "https://www.youtube.com/embed/OoJ4Ba1rkY4?autoplay=1&playsinline=1&rel=0",
+    player: soundCloudPlayer("https://soundcloud.com/jojiofficial/joji-track-3"),
     x: 30,
     y: 73,
     r: 9,
@@ -27,7 +29,7 @@ const albums = [
     title: "King of Hurts",
     artist: "The Black Skirts",
     cover: "assets/covers/black-skirts-king-of-hurts.webp",
-    player: "https://www.youtube.com/embed/liLuJHShuN4?autoplay=1&playsinline=1&rel=0",
+    player: soundCloudPlayer("https://soundcloud.com/ideadeadr/djdoysaelaw7"),
     x: 43,
     y: 52,
     r: -5,
@@ -49,7 +51,7 @@ const albums = [
     title: "I Am Sorry, I Hate You",
     artist: "Jaurim",
     cover: "assets/covers/jaurim-i-am-sorry-i-hate-you.webp",
-    player: "https://www.youtube.com/embed/rBa4ZYxI4vM?autoplay=1&playsinline=1&rel=0",
+    player: soundCloudPlayer("https://soundcloud.com/rockkkkkk/xy2j4uabzbxv"),
     x: 75,
     y: 32,
     r: 13,
