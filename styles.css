@@ -215,6 +215,12 @@ img {
   transform: rotate(11deg);
 }
 
+.album-card:nth-child(7) .sleeve::before {
+  left: 14%;
+  width: 54%;
+  transform: rotate(-9deg);
+}
+
 .sleeve::after {
   position: absolute;
   inset: 0.48rem;
@@ -345,7 +351,7 @@ img {
   }
 
   .archive-floor {
-    min-height: 1480px;
+    min-height: 1700px;
   }
 
   .album-card {
@@ -379,7 +385,12 @@ img {
 
   .album-card:nth-child(6) {
     left: 62%;
-    top: 89%;
+    top: 80%;
+  }
+
+  .album-card:nth-child(7) {
+    left: 42%;
+    top: 93%;
   }
 
   .now-playing {

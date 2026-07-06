@@ -36,6 +36,10 @@ COVERS = [
         "slug": "leegodo-mouse",
         "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ea/67/1d/ea671da0-bbe8-a939-e7c4-b3053723c488/LeeGoDo_Mouse_3000.jpg/600x600bb.jpg",
     },
+    {
+        "slug": "okashii-rumble",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ce/f3/4d/cef34d8b-04e8-d9bf-8c0b-88680685696c/OKASHII.jpg/600x600bf-60.jpg",
+    },
 ]
 
 
