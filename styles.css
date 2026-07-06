@@ -62,6 +62,59 @@ img {
   image-rendering: crisp-edges;
 }
 
+.home-link {
+  position: fixed;
+  top: 1.15rem;
+  left: 1rem;
+  z-index: 80;
+  display: inline-block;
+  min-width: 5.6rem;
+  padding: 0.56rem 0.82rem 0.48rem;
+  color: rgba(10, 8, 6, 0.92);
+  background:
+    radial-gradient(circle at 18% 28%, rgba(69, 32, 19, 0.38) 0 3px, transparent 4px),
+    radial-gradient(circle at 80% 71%, rgba(0, 0, 0, 0.34) 0 2px, transparent 3px),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.14) 0 1px, transparent 1px 4px),
+    #bda36f;
+  border: 2px solid rgba(43, 31, 20, 0.72);
+  box-shadow:
+    5px 6px 0 rgba(0, 0, 0, 0.72),
+    inset 0 0 0 2px rgba(224, 203, 142, 0.22);
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 0.9;
+  text-align: center;
+  text-decoration: none;
+  text-shadow:
+    1px 0 rgba(255, 230, 169, 0.32),
+    -1px 0 rgba(42, 16, 11, 0.38);
+  text-transform: lowercase;
+  transform: rotate(-6deg);
+}
+
+.home-link::before {
+  position: absolute;
+  top: -0.62rem;
+  left: 18%;
+  width: 68%;
+  height: 0.92rem;
+  pointer-events: none;
+  content: "";
+  background:
+    repeating-linear-gradient(90deg, rgba(49, 30, 15, 0.3) 0 5px, transparent 5px 9px),
+    linear-gradient(90deg, rgba(94, 71, 42, 0.74), rgba(209, 187, 125, 0.52), rgba(72, 47, 25, 0.68));
+  border: 1px solid rgba(42, 28, 17, 0.4);
+  transform: rotate(7deg);
+}
+
+.home-link:hover,
+.home-link:focus-visible {
+  color: #050403;
+  outline: 2px dashed rgba(216, 206, 181, 0.72);
+  outline-offset: 3px;
+  transform: rotate(-6deg) translate(1px, 1px);
+}
+
 .archive-floor {
   position: relative;
   width: 100vw;
