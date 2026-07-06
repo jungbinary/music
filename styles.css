@@ -93,7 +93,7 @@ img {
   left: var(--x-pos);
   top: var(--y-pos);
   z-index: var(--z);
-  width: clamp(320px, 28vw, 520px);
+  width: clamp(260px, 23vw, 420px);
   padding: 0;
   cursor: pointer;
   background: transparent;
