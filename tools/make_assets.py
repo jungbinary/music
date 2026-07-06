@@ -59,14 +59,14 @@ def download_image(url):
 
 def save_cover(slug, url):
     image = download_image(url)
-    size = 96
+    size = 72
     image.thumbnail((size, size), Image.Resampling.BILINEAR)
     canvas = Image.new("RGB", (size, size), (8, 7, 6))
     x = (size - image.width) // 2
     y = (size - image.height) // 2
     canvas.paste(image, (x, y))
-    canvas = canvas.quantize(colors=28).convert("RGB")
-    canvas.save(COVER_DIR / f"{slug}.webp", format="WEBP", quality=24, method=6)
+    canvas = canvas.quantize(colors=18).convert("RGB")
+    canvas.save(COVER_DIR / f"{slug}.webp", format="WEBP", quality=18, method=6)
 
 
 def make_noise_assets():

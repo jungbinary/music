@@ -278,7 +278,7 @@ img {
   aspect-ratio: 1;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  filter: brightness(0.72) contrast(1.28) saturate(0.62);
+  filter: brightness(0.68) contrast(1.42) saturate(0.5);
 }
 
 .now-playing {
@@ -340,7 +340,7 @@ img {
   aspect-ratio: 1;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  filter: brightness(0.72) contrast(1.28) saturate(0.62);
+  filter: brightness(0.68) contrast(1.42) saturate(0.5);
 }
 
 .panel-copy h2 {
