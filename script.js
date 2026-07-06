@@ -1,5 +1,5 @@
-const soundCloudPlayer = (url) =>
-  `https://w.soundcloud.com/player/?url=${encodeURIComponent(url)}&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false`;
+const spotifyPlayer = (trackId) =>
+  `https://open.spotify.com/embed/track/${trackId}?utm_source=generator&theme=0`;
 
 const albums = [
   {
@@ -7,7 +7,7 @@ const albums = [
     title: "Sanctuary",
     artist: "Joji",
     cover: "assets/covers/joji-sanctuary.webp",
-    player: soundCloudPlayer("https://soundcloud.com/jojiofficial/sanctuary"),
+    player: spotifyPlayer("4VQH4VluDUOsOuDxccTeyN"),
     x: 17,
     y: 34,
     r: -13,
@@ -18,7 +18,7 @@ const albums = [
     title: "Die For You",
     artist: "Joji",
     cover: "assets/covers/joji-die-for-you.webp",
-    player: soundCloudPlayer("https://soundcloud.com/jojiofficial/joji-track-3"),
+    player: spotifyPlayer("00WLowvlN5cjkYpQV6pjo4"),
     x: 30,
     y: 73,
     r: 9,
@@ -29,7 +29,7 @@ const albums = [
     title: "King of Hurts",
     artist: "The Black Skirts",
     cover: "assets/covers/black-skirts-king-of-hurts.webp",
-    player: soundCloudPlayer("https://soundcloud.com/ideadeadr/djdoysaelaw7"),
+    player: spotifyPlayer("1KZB7zYegoY7sM2AKZday7"),
     x: 43,
     y: 52,
     r: -5,
@@ -40,7 +40,7 @@ const albums = [
     title: "Seigfried",
     artist: "Frank Ocean",
     cover: "assets/covers/frank-ocean-seigfried.webp",
-    player: "https://www.youtube.com/embed/p_oL2OIGo04?autoplay=1&playsinline=1&rel=0",
+    player: spotifyPlayer("1BViPjTT585XAhkUUrkts0"),
     x: 61,
     y: 74,
     r: -10,
@@ -51,7 +51,7 @@ const albums = [
     title: "I Am Sorry, I Hate You",
     artist: "Jaurim",
     cover: "assets/covers/jaurim-i-am-sorry-i-hate-you.webp",
-    player: soundCloudPlayer("https://soundcloud.com/rockkkkkk/xy2j4uabzbxv"),
+    player: spotifyPlayer("0lyqOQHPupP6ruQ0f263WJ"),
     x: 75,
     y: 32,
     r: 13,
@@ -62,7 +62,7 @@ const albums = [
     title: "Mouse",
     artist: "lee-godo",
     cover: "assets/covers/leegodo-mouse.webp",
-    player: "https://www.youtube.com/embed/fLWuMf3ggHc?autoplay=1&playsinline=1&rel=0",
+    player: spotifyPlayer("3Xz3KJ4ZsFmiwRcrzuXV3m"),
     x: 83,
     y: 64,
     r: -7,
@@ -73,7 +73,7 @@ const albums = [
     title: "Rumble",
     artist: "OKASHII",
     cover: "assets/covers/okashii-rumble.webp",
-    player: "https://www.youtube.com/embed/kW4nifkpgFY?autoplay=1&playsinline=1&rel=0",
+    player: spotifyPlayer("3Koj6jG4FjCyjjL3hvAIx0"),
     x: 54,
     y: 24,
     r: 8,
