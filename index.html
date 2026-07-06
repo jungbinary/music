@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="흩어진 앨범 커버와 사적인 감상으로 만든 lo-fi 바이닐 아카이브"
+    />
+    <title>Room Floor Rotation</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23090807'/%3E%3Ccircle cx='16' cy='16' r='12' fill='%23171412' stroke='%23d4c3a1' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%238f4d35'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="archive-floor" id="archiveFloor">
+      <section class="album-layer" aria-label="흩어진 앨범 커버"></section>
+    </main>
+
+    <aside class="now-playing" id="nowPlaying" aria-hidden="true" aria-live="polite">
+      <button class="panel-close" type="button" id="panelClose" aria-label="now playing 패널 닫기">
+        ×
+      </button>
+      <div class="panel-grid">
+        <img class="panel-cover" id="panelCover" alt="" />
+        <div class="panel-copy">
+          <h2 id="panelTitle">click cover</h2>
+          <p id="panelArtist"></p>
+        </div>
+      </div>
+      <iframe
+        class="audio-player"
+        id="audioPlayer"
+        title="song player"
+        allow="autoplay; encrypted-media"
+      ></iframe>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
