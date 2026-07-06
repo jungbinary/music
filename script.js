@@ -60,10 +60,10 @@ const albums = [
     artist: "Whys Young",
     cover: "assets/covers/whys-young-dimension-theory.webp",
     youtube: "https://www.youtube.com/watch?v=IAGBO7OQgXA",
-    x: 23,
-    y: 56,
+    x: 27,
+    y: 42,
     r: -7,
-    z: 8,
+    z: 2,
   },
   {
     slug: "okashii-rumble",
