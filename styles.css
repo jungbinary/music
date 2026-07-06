@@ -76,9 +76,41 @@ img {
   border: 0;
   filter:
     drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.9))
-    drop-shadow(-1px 0 rgba(218, 190, 119, 0.12));
+    drop-shadow(-1px 0 rgba(218, 190, 119, 0.12))
+    drop-shadow(0 -1px 0 rgba(37, 22, 13, 0.46));
   text-decoration: none;
   transform: rotate(-4deg);
+}
+
+.home-link::before,
+.home-link::after {
+  position: absolute;
+  pointer-events: none;
+  content: "";
+}
+
+.home-link::before {
+  inset: 0.36rem;
+  border: 2px solid currentColor;
+  clip-path: polygon(0 10%, 84% 0, 100% 18%, 92% 52%, 100% 100%, 12% 88%, 0 96%, 8% 58%);
+  opacity: 0.28;
+  transform: rotate(5deg);
+}
+
+.home-link::after {
+  top: 0.72rem;
+  left: 0.78rem;
+  width: 72%;
+  height: 2px;
+  background:
+    linear-gradient(90deg, currentColor 0 16%, transparent 16% 27%, currentColor 27% 43%, transparent 43% 52%, currentColor 52% 100%);
+  box-shadow:
+    0 0.62rem 0 rgba(174, 154, 105, 0.38),
+    0.16rem 1.12rem 0 rgba(0, 0, 0, 0.55),
+    -0.12rem 1.52rem 0 rgba(174, 154, 105, 0.26);
+  clip-path: polygon(0 0, 94% 0, 100% 100%, 8% 80%);
+  opacity: 0.42;
+  transform: rotate(-12deg);
 }
 
 .home-link svg {
@@ -93,6 +125,7 @@ img {
   stroke-linecap: square;
   stroke-linejoin: round;
   stroke-width: 3.4;
+  stroke-dasharray: 18 1 9 2;
 }
 
 .home-link:hover,
