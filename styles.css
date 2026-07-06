@@ -384,7 +384,7 @@ img {
   }
 
   .archive-floor {
-    min-height: 1700px;
+    min-height: 1950px;
   }
 
   .album-card {
@@ -412,18 +412,18 @@ img {
   }
 
   .album-card:nth-child(5) {
-    left: 40%;
-    top: 75%;
+    left: 38%;
+    top: 72%;
   }
 
   .album-card:nth-child(6) {
-    left: 62%;
-    top: 80%;
+    left: 64%;
+    top: 86%;
   }
 
   .album-card:nth-child(7) {
-    left: 42%;
-    top: 93%;
+    left: 40%;
+    top: 101%;
   }
 
   .now-playing {
