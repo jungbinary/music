@@ -31,7 +31,7 @@ const albums = [
     x: 43,
     y: 52,
     r: -5,
-    z: 5,
+    z: 12,
   },
   {
     slug: "frank-ocean-seigfried",
