@@ -1,13 +1,10 @@
-const spotifyPlayer = (trackId) =>
-  `https://open.spotify.com/embed/track/${trackId}?utm_source=generator&theme=0`;
-
 const albums = [
   {
     slug: "joji-sanctuary",
     title: "Sanctuary",
     artist: "Joji",
     cover: "assets/covers/joji-sanctuary.webp",
-    player: spotifyPlayer("4VQH4VluDUOsOuDxccTeyN"),
+    youtube: "https://www.youtube.com/watch?v=YWN81V7ojOE",
     x: 17,
     y: 34,
     r: -13,
@@ -18,7 +15,7 @@ const albums = [
     title: "Die For You",
     artist: "Joji",
     cover: "assets/covers/joji-die-for-you.webp",
-    player: spotifyPlayer("00WLowvlN5cjkYpQV6pjo4"),
+    youtube: "https://www.youtube.com/watch?v=OoJ4Ba1rkY4",
     x: 30,
     y: 73,
     r: 9,
@@ -29,7 +26,7 @@ const albums = [
     title: "King of Hurts",
     artist: "The Black Skirts",
     cover: "assets/covers/black-skirts-king-of-hurts.webp",
-    player: spotifyPlayer("1KZB7zYegoY7sM2AKZday7"),
+    youtube: "https://www.youtube.com/watch?v=liLuJHShuN4",
     x: 43,
     y: 52,
     r: -5,
@@ -40,7 +37,7 @@ const albums = [
     title: "Seigfried",
     artist: "Frank Ocean",
     cover: "assets/covers/frank-ocean-seigfried.webp",
-    player: spotifyPlayer("1BViPjTT585XAhkUUrkts0"),
+    youtube: "https://www.youtube.com/watch?v=p_oL2OIGo04",
     x: 61,
     y: 74,
     r: -10,
@@ -51,20 +48,20 @@ const albums = [
     title: "I Am Sorry, I Hate You",
     artist: "Jaurim",
     cover: "assets/covers/jaurim-i-am-sorry-i-hate-you.webp",
-    player: spotifyPlayer("0lyqOQHPupP6ruQ0f263WJ"),
+    youtube: "https://www.youtube.com/watch?v=rBa4ZYxI4vM",
     x: 75,
     y: 32,
     r: 13,
     z: 6,
   },
   {
-    slug: "leegodo-mouse",
-    title: "Mouse",
-    artist: "lee-godo",
-    cover: "assets/covers/leegodo-mouse.webp",
-    player: spotifyPlayer("3Xz3KJ4ZsFmiwRcrzuXV3m"),
-    x: 83,
-    y: 64,
+    slug: "whys-young-dimension-theory",
+    title: "Dimension Theory",
+    artist: "Whys Young",
+    cover: "assets/covers/whys-young-dimension-theory.webp",
+    youtube: "https://www.youtube.com/watch?v=IAGBO7OQgXA",
+    x: 82,
+    y: 61,
     r: -7,
     z: 8,
   },
@@ -73,11 +70,22 @@ const albums = [
     title: "Rumble",
     artist: "OKASHII",
     cover: "assets/covers/okashii-rumble.webp",
-    player: spotifyPlayer("3Koj6jG4FjCyjjL3hvAIx0"),
+    youtube: "https://www.youtube.com/watch?v=kW4nifkpgFY",
     x: 54,
     y: 24,
     r: 8,
     z: 9,
+  },
+  {
+    slug: "cigarettes-after-sex-k",
+    title: "K.",
+    artist: "Cigarettes After Sex",
+    cover: "assets/covers/cigarettes-after-sex-k.webp",
+    youtube: "https://www.youtube.com/watch?v=L4sbDxR22z4",
+    x: 88,
+    y: 80,
+    r: 11,
+    z: 5,
   },
 ];
 
@@ -87,7 +95,7 @@ const closeButton = document.querySelector("#panelClose");
 const panelCover = document.querySelector("#panelCover");
 const panelTitle = document.querySelector("#panelTitle");
 const panelArtist = document.querySelector("#panelArtist");
-const audioPlayer = document.querySelector("#audioPlayer");
+const youtubeLink = document.querySelector("#youtubeLink");
 
 function makeCard(album) {
   const button = document.createElement("button");
@@ -124,7 +132,7 @@ function openPanel(album) {
   panelCover.alt = `${album.title} cover`;
   panelTitle.textContent = album.title.toLocaleLowerCase("en-US");
   panelArtist.textContent = album.artist.toLocaleLowerCase("en-US");
-  audioPlayer.src = album.player;
+  youtubeLink.href = album.youtube;
   nowPlaying.classList.add("is-visible");
   nowPlaying.removeAttribute("aria-hidden");
 }
@@ -132,7 +140,7 @@ function openPanel(album) {
 function closePanel() {
   nowPlaying.classList.remove("is-visible");
   nowPlaying.setAttribute("aria-hidden", "true");
-  audioPlayer.src = "";
+  youtubeLink.href = "#";
   document.querySelectorAll(".album-card.is-active").forEach((card) => {
     card.classList.remove("is-active");
   });

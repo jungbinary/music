@@ -254,6 +254,12 @@ img {
   transform: rotate(-9deg);
 }
 
+.album-card:nth-child(8) .sleeve::before {
+  left: 24%;
+  width: 57%;
+  transform: rotate(14deg);
+}
+
 .sleeve::after {
   position: absolute;
   inset: 0.48rem;
@@ -367,17 +373,32 @@ img {
     0 1px rgba(0, 0, 0, 0.86);
 }
 
-.audio-player {
-  display: block;
-  width: 100%;
-  height: 82px;
-  margin-top: 0.72rem;
-  background: #050403;
-  clip-path: polygon(0 7%, 98% 0, 100% 89%, 96% 100%, 3% 94%);
-  border: 0;
-  opacity: 0.9;
-  filter: contrast(1.12) saturate(0.72) brightness(0.86);
-  pointer-events: auto;
+.youtube-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  padding: 0.34rem 0.52rem 0.28rem;
+  color: rgba(181, 154, 96, 0.92);
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 4px),
+    #090604;
+  border: 1px solid rgba(107, 80, 46, 0.52);
+  box-shadow:
+    4px 4px 0 rgba(0, 0, 0, 0.6),
+    inset 0 0 12px rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  text-shadow:
+    1px 0 rgba(0, 0, 0, 0.95),
+    -1px 0 rgba(83, 30, 18, 0.52);
+  clip-path: polygon(0 8%, 95% 0, 100% 86%, 92% 100%, 5% 92%);
+}
+
+.youtube-link:hover,
+.youtube-link:focus-visible {
+  color: rgba(217, 190, 125, 0.96);
+  outline: 1px dashed rgba(124, 97, 58, 0.78);
+  outline-offset: 3px;
 }
 
 @media (max-width: 760px) {
@@ -386,7 +407,7 @@ img {
   }
 
   .archive-floor {
-    min-height: 2300px;
+    min-height: 3000px;
   }
 
   .album-card {
@@ -415,17 +436,22 @@ img {
 
   .album-card:nth-child(5) {
     left: 38%;
-    top: 68%;
+    top: 62%;
   }
 
   .album-card:nth-child(6) {
     left: 64%;
-    top: 82%;
+    top: 74%;
   }
 
   .album-card:nth-child(7) {
     left: 40%;
-    top: 94%;
+    top: 84%;
+  }
+
+  .album-card:nth-child(8) {
+    left: 63%;
+    top: 93%;
   }
 
   .now-playing {

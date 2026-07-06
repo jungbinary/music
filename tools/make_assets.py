@@ -33,12 +33,16 @@ COVERS = [
         "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/31/21/2d/31212d86-d1c7-98bc-8387-51441e12bf9f/Lovers.jpg/600x600bb.jpg",
     },
     {
-        "slug": "leegodo-mouse",
-        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ea/67/1d/ea671da0-bbe8-a939-e7c4-b3053723c488/LeeGoDo_Mouse_3000.jpg/600x600bb.jpg",
-    },
-    {
         "slug": "okashii-rumble",
         "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ce/f3/4d/cef34d8b-04e8-d9bf-8c0b-88680685696c/OKASHII.jpg/600x600bf-60.jpg",
+    },
+    {
+        "slug": "whys-young-dimension-theory",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/48/79/29487927-cebd-fc67-4ac0-1f044a71e836/5021732875167.jpg/600x600bb.jpg",
+    },
+    {
+        "slug": "cigarettes-after-sex-k",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/5e/0f/b35e0fbe-2370-fc48-0f0c-977525e93bf2/720841214601_Cover.jpg/600x600bb.jpg",
     },
 ]
 
