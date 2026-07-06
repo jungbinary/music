@@ -278,7 +278,7 @@ img {
   aspect-ratio: 1;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  filter: brightness(0.68) contrast(1.42) saturate(0.5);
+  filter: brightness(0.76) contrast(1.25) saturate(0.78);
 }
 
 .now-playing {
@@ -340,23 +340,28 @@ img {
   aspect-ratio: 1;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  filter: brightness(0.68) contrast(1.42) saturate(0.5);
+  filter: brightness(0.76) contrast(1.25) saturate(0.78);
 }
 
 .panel-copy h2 {
-  margin: 0 0 0.3rem;
-  color: rgba(197, 176, 116, 0.88);
+  display: inline;
+  margin: 0 0 0.34rem;
+  color: rgba(184, 159, 96, 0.9);
+  background:
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0 2px, transparent 2px 5px),
+    rgba(20, 11, 7, 0.22);
   font-size: clamp(1.45rem, 4.5vw, 2.05rem);
   line-height: 0.95;
   letter-spacing: 0;
   overflow-wrap: anywhere;
   text-shadow:
-    2px 0 rgba(0, 0, 0, 0.98),
-    -2px 0 rgba(76, 24, 17, 0.7),
-    0 2px rgba(0, 0, 0, 0.88),
-    1px -1px rgba(136, 96, 48, 0.26);
+    3px 0 rgba(0, 0, 0, 0.98),
+    -2px 0 rgba(80, 23, 15, 0.78),
+    0 3px rgba(0, 0, 0, 0.9),
+    1px -1px rgba(141, 91, 39, 0.34),
+    -1px 1px rgba(0, 0, 0, 0.8);
   text-transform: none;
-  filter: contrast(1.35);
+  filter: contrast(1.55);
 }
 
 .panel-copy p {
@@ -364,20 +369,25 @@ img {
 }
 
 #panelArtist {
-  color: rgba(153, 129, 82, 0.9);
+  display: inline-block;
+  margin-top: 0.44rem;
+  padding: 0.08rem 0.18rem;
+  color: rgba(134, 108, 64, 0.92);
+  background: rgba(7, 4, 3, 0.36);
   font-size: 1.08rem;
   line-height: 1;
   text-shadow:
-    1px 0 rgba(0, 0, 0, 0.95),
-    -1px 0 rgba(83, 30, 18, 0.52),
-    0 1px rgba(0, 0, 0, 0.86);
+    2px 0 rgba(0, 0, 0, 0.95),
+    -1px 0 rgba(83, 30, 18, 0.68),
+    0 2px rgba(0, 0, 0, 0.86);
+  filter: contrast(1.45);
 }
 
 .youtube-link {
   display: inline-block;
   margin-top: 0.7rem;
   padding: 0.34rem 0.52rem 0.28rem;
-  color: rgba(181, 154, 96, 0.92);
+  color: rgba(160, 128, 73, 0.92);
   background:
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 4px),
     #090604;
@@ -385,13 +395,15 @@ img {
   box-shadow:
     4px 4px 0 rgba(0, 0, 0, 0.6),
     inset 0 0 12px rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1;
   text-decoration: none;
   text-shadow:
-    1px 0 rgba(0, 0, 0, 0.95),
-    -1px 0 rgba(83, 30, 18, 0.52);
+    2px 0 rgba(0, 0, 0, 0.95),
+    -1px 0 rgba(83, 30, 18, 0.68),
+    0 2px rgba(0, 0, 0, 0.8);
   clip-path: polygon(0 8%, 95% 0, 100% 86%, 92% 100%, 5% 92%);
+  filter: contrast(1.4);
 }
 
 .youtube-link:hover,
