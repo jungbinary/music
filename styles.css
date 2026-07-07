@@ -827,17 +827,17 @@ img {
   }
 
   .movie-floor {
-    min-height: 1880px;
+    min-height: 1950px;
     padding-top: 5.8rem;
     padding-bottom: 5rem;
   }
 
   .movie-wall {
-    min-height: 1710px;
+    min-height: 1780px;
   }
 
   .poster-card {
-    width: min(62vw, 248px);
+    width: min(65vw, 260px);
   }
 
   .poster-card-blade {
