@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="낡은 방바닥 위의 영화 포스터 조각들"
+    />
+    <title>movie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="movie-page">
+    <a class="home-link" href="https://github.com/jungbinary" aria-label="jungbinary github home">
+      <svg aria-hidden="true" viewBox="0 0 32 32">
+        <path d="M5 15.5 16 6l11 9.5" />
+        <path d="M8.5 14.5v11h15v-11" />
+        <path d="M13.2 25.5v-7h5.6v7" />
+      </svg>
+    </a>
+    <a class="next-link" href="index.html">music</a>
+
+    <main class="movie-floor" aria-label="movie poster floor">
+      <section class="movie-wall">
+        <div class="poster-pile" aria-label="movie posters">
+          <button class="poster-card poster-card-blade" type="button" data-movie="blade-runner">
+            <img src="assets/movie/blade-runner.webp" alt="Blade Runner poster" />
+          </button>
+
+          <button class="poster-card poster-card-matrix" type="button" data-movie="matrix">
+            <img src="assets/movie/the-matrix.webp" alt="The Matrix poster" />
+          </button>
+
+          <button class="poster-card poster-card-alien" type="button" data-movie="alien">
+            <img src="assets/movie/alien.webp" alt="Alien poster" />
+          </button>
+
+          <button class="poster-card poster-card-dune" type="button" data-movie="dune-part-one">
+            <img src="assets/movie/dune-part-one.webp" alt="Dune Part One poster" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <aside class="movie-panel" id="moviePanel" aria-hidden="true" aria-live="polite">
+      <button class="panel-close" type="button" id="moviePanelClose" aria-label="movie 패널 닫기">
+        ×
+      </button>
+      <div class="movie-panel-grid">
+        <div class="movie-panel-copy">
+          <h2 id="moviePanelTitle">click poster</h2>
+          <p id="moviePanelYear"></p>
+          <p id="moviePanelDirector"></p>
+          <p class="movie-panel-note" id="moviePanelNote"></p>
+        </div>
+      </div>
+    </aside>
+
+    <script src="movie.js"></script>
+  </body>
+</html>

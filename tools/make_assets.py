@@ -3,12 +3,13 @@ from urllib.request import Request, urlopen
 import math
 import random
 
-from PIL import Image
+from PIL import Image, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSET_DIR = ROOT / "assets"
 COVER_DIR = ASSET_DIR / "covers"
+MOVIE_DIR = ASSET_DIR / "movie"
 
 
 COVERS = [
@@ -47,6 +48,26 @@ COVERS = [
 ]
 
 
+MOVIE_IMAGES = [
+    {
+        "slug": "blade-runner",
+        "url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+    },
+    {
+        "slug": "the-matrix",
+        "url": "https://upload.wikimedia.org/wikipedia/en/d/db/The_Matrix.png",
+    },
+    {
+        "slug": "alien",
+        "url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
+    },
+    {
+        "slug": "dune-part-one",
+        "url": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
+    },
+]
+
+
 def clamp(value):
     return max(0, min(255, int(value)))
 
@@ -67,6 +88,13 @@ def save_cover(slug, url):
     canvas.paste(image, (x, y))
     canvas = canvas.quantize(colors=18).convert("RGB")
     canvas.save(COVER_DIR / f"{slug}.webp", format="WEBP", quality=18, method=6)
+
+
+def save_movie_image(slug, url):
+    image = download_image(url)
+    image = ImageOps.fit(image, (150, 225), method=Image.Resampling.BILINEAR)
+    image = image.quantize(colors=18).convert("RGB")
+    image.save(MOVIE_DIR / f"{slug}.webp", format="WEBP", quality=12, method=6)
 
 
 def make_noise_assets():
@@ -149,10 +177,15 @@ def make_noise_assets():
 def main():
     ASSET_DIR.mkdir(exist_ok=True)
     COVER_DIR.mkdir(parents=True, exist_ok=True)
+    MOVIE_DIR.mkdir(parents=True, exist_ok=True)
     for old_cover in COVER_DIR.glob("*"):
         old_cover.unlink()
     for cover in COVERS:
         save_cover(cover["slug"], cover["url"])
+    for old_movie_image in MOVIE_DIR.glob("*"):
+        old_movie_image.unlink()
+    for movie_image in MOVIE_IMAGES:
+        save_movie_image(movie_image["slug"], movie_image["url"])
     make_noise_assets()
 
 
