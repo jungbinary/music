@@ -3,7 +3,7 @@ const movies = {
     title: "blade runner",
     year: "1982",
     director: "a film by ridley scott",
-    note: "I am drawn to flawed messiahs:\nthose not chosen by fate, but made sacred by failure and lack.",
+    note: "I am drawn to flawed messiahs:\nthose not chosen by fate, but shaped by failure and longing.",
     poster: "assets/movie/blade-runner.webp",
   },
   matrix: {
