@@ -616,7 +616,7 @@ img {
 }
 
 .poster-card-matrix {
-  top: 5%;
+  top: 2%;
   left: 43%;
   z-index: 4;
   --poster-rotate: 11deg;
@@ -632,7 +632,7 @@ img {
 }
 
 .poster-card-dune {
-  top: 25%;
+  top: 19%;
   left: 30%;
   z-index: 8;
   --poster-rotate: -5deg;
@@ -827,13 +827,13 @@ img {
   }
 
   .movie-floor {
-    min-height: 1588px;
+    min-height: 1880px;
     padding-top: 5.8rem;
-    padding-bottom: 0;
+    padding-bottom: 5rem;
   }
 
   .movie-wall {
-    min-height: 1493px;
+    min-height: 1710px;
   }
 
   .poster-card {
@@ -846,17 +846,17 @@ img {
   }
 
   .poster-card-matrix {
-    top: 23%;
+    top: 28%;
     left: 31%;
   }
 
   .poster-card-alien {
-    top: 67%;
+    top: 82%;
     left: 8%;
   }
 
   .poster-card-dune {
-    top: 45%;
+    top: 56%;
     left: 31%;
   }
 
