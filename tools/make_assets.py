@@ -37,8 +37,8 @@ COVERS = [
         "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5a/72/3f/5a723fec-965d-3483-89f8-d66b79f88419/15UMGIM24224.rgb.jpg/600x600bb.jpg",
     },
     {
-        "slug": "whys-young-dimension-theory",
-        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/48/79/29487927-cebd-fc67-4ac0-1f044a71e836/5021732875167.jpg/600x600bb.jpg",
+        "slug": "2hollis-afraid",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d6/51/44/d65144c1-8df5-fd79-7c83-492fa2a3da23/25UMGIM06144.rgb.jpg/600x600bb.jpg",
     },
     {
         "slug": "cigarettes-after-sex-k",
