@@ -513,7 +513,7 @@ img {
 }
 
 .movie-page {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .movie-floor {
@@ -608,7 +608,7 @@ img {
 }
 
 .poster-card-blade {
-  top: 6%;
+  top: 3%;
   left: -2%;
   z-index: 5;
   --poster-rotate: -7deg;
@@ -616,7 +616,7 @@ img {
 }
 
 .poster-card-matrix {
-  top: 8%;
+  top: 5%;
   left: 43%;
   z-index: 4;
   --poster-rotate: 11deg;
@@ -624,7 +624,7 @@ img {
 }
 
 .poster-card-alien {
-  top: 13%;
+  top: 10%;
   left: 72%;
   z-index: 6;
   --poster-rotate: -3deg;
@@ -632,7 +632,7 @@ img {
 }
 
 .poster-card-dune {
-  top: 30%;
+  top: 25%;
   left: 30%;
   z-index: 8;
   --poster-rotate: -5deg;
@@ -763,6 +763,10 @@ img {
     overflow: auto;
   }
 
+  .movie-page {
+    overflow: auto;
+  }
+
   .archive-floor {
     min-height: 2600px;
   }
@@ -837,22 +841,22 @@ img {
   }
 
   .poster-card-blade {
-    top: 3%;
+    top: 2%;
     left: 4%;
   }
 
   .poster-card-matrix {
-    top: 26%;
+    top: 23%;
     left: 31%;
   }
 
   .poster-card-alien {
-    top: 72%;
+    top: 67%;
     left: 8%;
   }
 
   .poster-card-dune {
-    top: 49%;
+    top: 45%;
     left: 31%;
   }
 
