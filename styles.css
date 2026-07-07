@@ -443,7 +443,7 @@ img {
 }
 
 .panel-copy h2 {
-  display: inline;
+  display: block;
   margin: 0 0 0.34rem;
   color: rgba(184, 159, 96, 0.9);
   background:
@@ -468,7 +468,8 @@ img {
 }
 
 #panelArtist {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-top: 0.44rem;
   padding: 0.08rem 0.18rem;
   color: rgba(134, 108, 64, 0.92);
@@ -483,7 +484,8 @@ img {
 }
 
 .youtube-link {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-top: 0.7rem;
   padding: 0.34rem 0.52rem 0.28rem;
   color: rgba(160, 128, 73, 0.92);
@@ -709,8 +711,15 @@ img {
   text-transform: lowercase;
 }
 
+.movie-panel-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.34rem;
+  align-items: end;
+}
+
 .movie-panel-copy h2 {
-  display: inline;
+  display: block;
   color: rgba(184, 159, 96, 0.9);
   background:
     repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0 2px, transparent 2px 5px),
@@ -729,7 +738,8 @@ img {
 }
 
 .movie-panel-copy p {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-top: 0.44rem;
   padding: 0.08rem 0.18rem;
   color: rgba(134, 108, 64, 0.92);
@@ -744,7 +754,11 @@ img {
 }
 
 .movie-panel-copy p + p {
-  margin-left: 0.2rem;
+  margin-left: 0;
+}
+
+.movie-panel-heading p {
+  margin-top: 0;
 }
 
 .movie-panel-note {
