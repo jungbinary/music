@@ -33,8 +33,8 @@ COVERS = [
         "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/31/21/2d/31212d86-d1c7-98bc-8387-51441e12bf9f/Lovers.jpg/600x600bb.jpg",
     },
     {
-        "slug": "okashii-rumble",
-        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ce/f3/4d/cef34d8b-04e8-d9bf-8c0b-88680685696c/OKASHII.jpg/600x600bf-60.jpg",
+        "slug": "amy-winehouse-love-is-a-losing-game",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5a/72/3f/5a723fec-965d-3483-89f8-d66b79f88419/15UMGIM24224.rgb.jpg/600x600bb.jpg",
     },
     {
         "slug": "whys-young-dimension-theory",
